@@ -16,8 +16,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     print("topic : {} || payload : {}".format(msg.topic,str(msg.payload)))
-#broker_address = "192.168.1.12"
-broker_address = "localhost"
+broker_address = "192.168.1.14"
 
 subclient = mqtt.Client()
 subclient.on_connect = on_connect

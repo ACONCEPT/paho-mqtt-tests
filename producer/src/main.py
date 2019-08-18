@@ -6,8 +6,8 @@ import socket
 import random as rd
 import json
 
-#broker_address="192.168.1.12"
-broker_address="localhost"
+broker_address="192.168.1.14"
+#broker_address="localhost"
 client = mqtt.Client()
 client.connect(broker_address, 1883, 60)
 
